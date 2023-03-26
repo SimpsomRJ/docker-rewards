@@ -8,4 +8,4 @@ WORKDIR /bing-rewards
 
 RUN chmod +x run.sh script.sh
 
-RUN update.sh
+RUN i/bin/bash /bing-rewards/update.sh

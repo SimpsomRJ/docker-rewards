@@ -5,7 +5,7 @@
 #pip install -r bing-rewards/BingRewards/requirements.txt
 cd /bing-rewards/
 /bin/bash update.sh
-cd /rewards/bing-rewards/BingRewards
+cd /bing-rewards/BingRewards
 
 if [ $# -eq 0 ] ; then
     echo "Syntax: ./run.sh '<original BingRewards.py parameters>' '<email1> <email2> ... <emailN>' '<password1> <password2> ... <passwordN>' <telegram_token> <telegram_user_id>"

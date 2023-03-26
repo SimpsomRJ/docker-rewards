@@ -44,4 +44,4 @@ sed -i 's/options.add_argument("--disable-gpu")/options.add_argument("--disable-
 sed -i "s/('telegram_api_token'))/('telegram_api_token')).replace('\\\n', '')/" BingRewards.py
 sed -i "s/('telegram_userid'))/('telegram_userid')).replace('\\\n', '')/" BingRewards.py
 
-eval "/usr/bin/python3 BingRewards.py $params"
+eval "python BingRewards.py $params"

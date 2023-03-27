@@ -37,7 +37,7 @@ fi
 
 if [ ! -f config/config_multiple_accounts.json ] ; then 
     python setup.py -e $email -p $passwords
-    python setup.py --telegram_api_token $tat--telegram_userid $tu
+    python setup.py -ta "$tat" -tu "$tu"
 fi
 
 sed -i 's/options.add_argument("--disable-gpu")/options.add_argument("--disable-gpu")\n        options.add_argument("--no-sandbox")\n        options.add_argument("--ipc=host")\n        options.add_argument("--disable-dev-shm-usage")\n/' src/driver.py

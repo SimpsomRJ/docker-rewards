@@ -10,6 +10,6 @@ RUN chmod +x run.sh script.sh
 
 RUN git config --unset http.http://bitbucket.org/bing-rewards/bing-rewards.proxy
 
-RUN /bin/bash /bing-rewards/update.sh
+RUN /bin/bash /bing-rewards/scripts/update.sh
 
 RUN /usr/local/bin/python -m pip install --upgrade pip
